@@ -7,6 +7,9 @@ tags: ["example", "blog", "cool"]
 ---
 
 import { Image } from "@astrojs/image/components";
+import { Picture } from '@astrojs/image/components';
+
+<Picture src={import("src/assets/images/jelly-fish.jpg")} widths={[100, 200, 400, 800, 1600]} sizes="(max-width: 1600px) 100w, 1600px" alt="descriptive text" />
 
 ## Hello World
 

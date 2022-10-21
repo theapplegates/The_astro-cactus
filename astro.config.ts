@@ -11,13 +11,13 @@ export default defineConfig({
 			wrap: true,
 		},
 	},
-	site: "https://www.astro-theme-cactus.netlify.app",
+	site: "https://astonishing-sfogliatella-dc2807.netlify.app",
 	integrations: [
 		mdx({}),
 		tailwind({
 			config: { applyBaseStyles: false },
 		}),
-		image(),
+		image({serviceEntryPoint: '@astrojs/image/sharp'}),
 		sitemap(),
 	],
 });
